@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h1 id="hone"></h1>
+
+<script>
+    function clock(){
+let days = new Date();
+
+    let date = days.getDate();
+    let month = days.getMonth();
+    let year = days.getFullYear();
+    let rm = month + 1 ;
+
+    document.getElementById("hone").innerHTML = date + ":" + rm + ":" + year ;
+
+
+    }
+setInterval(clock,1000);
+
+    </script>
+
+
+</body>
+</html>
